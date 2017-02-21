@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_shift_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.leole.timetracker.ShiftInfoActivity"
+    tools:showIn="@layout/activity_shift_info">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblSetTime"
+        android:id="@+id/scrollSetTime">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Shift Information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitle"
+                android:textStyle="normal|bold"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="@string/strDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblDate"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtDate"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblName"
+                tools:text="Name"
+                android:textSize="14sp"
+                android:textStyle="normal|italic"
+                android:text="Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtName"
+                android:focusable="false"/>
+
+            <TextView
+                android:text="@string/strStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblStartTime" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtStartTime"
+                android:focusable="false"/>
+
+            <TextView
+                android:text="@string/strEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblEndTime" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtEndTime"
+                android:focusable="false"/>
+
+            <TextView
+                android:text="@string/strBreakTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblBreakTime" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnBreakTime"
+                android:entries="@array/breakTime" />
+
+            <TextView
+                android:text="@string/strNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblNote" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtNote"
+                android:focusable="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDeleteTime"
+                android:text="Delete"
+                android:onClick="btnDeletleTimeOnClick" />
+
+            <Button
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancel"
+                android:onClick="btnCancelOnClick"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

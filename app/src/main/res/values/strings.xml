@@ -1,0 +1,44 @@
+<resources>
+    <!-- Time Shift -->
+    <string name="app_name">TimeTracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="timeTitle">Time Tracker</string>
+    <string name="timesheet">New Time Shift</string>
+    <string name="strNewEmployee">New Employee</string>
+    <string name="strEmployeeList">Employee List</string>
+
+    <!-- Time Sheet -->
+    <string name="strTimeSheet">Time Sheet</string>
+    <string name="title_activity_time_sheet">TimeSheetActivity</string>
+
+    <!-- Set Time -->
+    <string name="strSetTime">Set Time</string>
+    <string name="strDate">Date</string>
+    <string name="strStartTime">Start Time:</string>
+    <string name="strEndTime">End Time:</string>
+    <string name="strBreakTime">Break Time:</string>
+    <string name="strNote">Note:</string>
+    <string name="title_activity_set_time">SetTimeActivity</string>
+    <string-array name="breakTime">
+        <item>
+            15 minutes
+        </item>
+        <item>
+            30 minutes
+        </item>
+        <item>
+            45 minutes
+        </item>
+        <item>
+            60 minutes
+        </item>
+    </string-array>
+    <string name="title_activity_new_employee">NewEmployeeActivity</string>
+    <string name="title_activity_employee_list">EmployeeListActivity</string>
+    <string name="title_activity_employee_information">EmployeeInformationActivity</string>
+    <string name="title_activity_edit_employee_information">EditEmployeeInformationActivity</string>
+    <string name="title_activity_shift_info">ShiftInfoActivity</string>
+    <string name="title_activity_new_time_sheet">NewTimeSheet</string>
+    <string name="title_activity_shift_list">ShiftList</string>
+
+</resources>

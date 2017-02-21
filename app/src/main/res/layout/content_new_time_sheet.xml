@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_new_employee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.leole.timetracker.NewEmployeeActivity"
+    tools:showIn="@layout/activity_new_time_sheet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="New Time Sheet "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblTitle"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Start Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblStartDate" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtStartDate" />
+
+            <TextView
+                android:text="End Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblEndDate" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+                android:id="@+id/txtEndDate" />
+
+            <TextView
+                android:text="Max Hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblMaxHour" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtMaxHour" />
+
+            <Button
+                android:text="Accept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAccept"
+                android:onClick="btnAcceptOnClick" />
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDelete"
+                android:onClick="btnCancelOnClick" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
